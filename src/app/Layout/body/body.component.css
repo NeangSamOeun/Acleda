@@ -1,0 +1,14 @@
+.body{
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
+    position: relative;
+    padding: 10px;
+    top: 0;
+}
+.body-dm-trim {
+    width: calc(100% - 16.5625rem);
+    margin-left: 16.5625rem;
+}
+.body-router {
+    margin-top: 60px;
+}

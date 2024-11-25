@@ -1,0 +1,14 @@
+<div>
+    <h3>My Courses</h3>
+</div>
+<div>
+    <form>
+        <label for="major">Select Major : </label>
+        <select name="major" id="major"  (change)="loadComponent($event)" >
+            <option *ngFor="let majorlists of major" [value]="majorlists.id">{{majorlists.label}}</option>
+        </select>
+    </form>
+</div>
+<ng-template #fieldContainer></ng-template>
+
+

@@ -1,0 +1,41 @@
+<div class="header">
+  <select name="experience">
+    <option value="">Work Experience</option>
+    <option value="">Education Background</option>
+    <option value="">Language</option>
+    <option value="">Skill</option>
+  </select>
+  <button>Create CV</button>
+</div>
+<div class="contant-form">
+  <div><h1>Work Experience</h1></div>
+  <div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <label for="position">Position</label>
+      <input id="position" formControlName="position" type="text" />
+
+      <label for="organization">Orzanization</label>
+      <input id="organization" formControlName="organization" type="text" />
+
+      <label for="employmentType">Employment Type</label>
+      <input id="employmentType" formControlName="employmentType" type="text" />
+
+      <label for="salaryrange">Salary Range</label>
+      <input id="salaryrange" formControlName="salaryrange" type="text" />
+
+      <label for="phonenumber">Phone Number</label>
+      <input id="phonenumber" formControlName="phonenumber" type="number" />
+
+      <label for="logcation">Logcation</label>
+      <input id="logcation" formControlName="logcation" type="text" />
+
+      <label for="date">Date</label>
+      <input id="date" formControlName="date" type="date" />
+
+      <label for="aboutyourwork">About your work</label>
+      <input id="aboutyourwork" formControlName="aboutyourwork" type="text" />
+
+      <button class="btn-form" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

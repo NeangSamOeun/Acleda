@@ -1,0 +1,118 @@
+.container-profile{
+    color: white;
+}
+.notification{
+    background-color:#1f3a5e;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.information{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3a5e;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    margin: 1px 0;
+}
+p{
+    margin-left: 30px;
+}
+.student-permission div {
+    display: flex;
+}
+.student-grievance{
+    display: flex;
+    background-color:#1f3a5e;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.student-grievance div{
+    display: flex;
+}
+
+/* Profile container styling */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1f3a5e;
+    margin: 20px auto;
+    color: white;
+}
+
+.profile div {
+    margin-right: 15px;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.profile p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.your-information{
+    background-color: #1f3a5e;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.informations{
+    text-align: center;
+}
+
+.change-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.change-password div {
+    display: flex;
+    align-items: center;
+}
+
+.change-password .pi.pi-key {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.change-password button {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#1f3a5e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.change-password button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.container ul {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.container ul li {
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.container select,
+.container input[type="text"] {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.mainMenu {
+  display: flex;
+  /* text-align: center; */
+}
+.menu-left {
+  margin-top: 10px;
+  width: 200px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+}
+
+.menu-left ul {
+  list-style-type: none;
+}
+
+.menu-left ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-left ul li:first-child {
+  /* background-color: red; */
+  /* color: #fff; White text for contrast */
+  /* padding: 10px; */
+  border-radius: 4px;
+}
+
+.menu-left ul li:hover {
+  color: #007bff;
+}
+
+ul li:hover {
+  color: #007bff;
+}
+
+select,
+input[type="text"] {
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.main-contant {
+  width: 80%;
+  padding: 20px;
+}
+.active {
+  color: #0056b3;
+  /* background-color: red; */
+}

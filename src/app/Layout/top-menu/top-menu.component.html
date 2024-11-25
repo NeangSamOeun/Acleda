@@ -1,0 +1,22 @@
+<nav class="top-menu">
+    <div class="title">
+        <h1>Student</h1>
+    </div>
+    <div class="nameUser">
+        <div (click)="toggleDropdown()" class="menu">
+            <p class="pi pi-user"></p>
+            <h5>HONG MENG</h5>
+            <p class="pi pi-bell"></p>
+        </div>
+        <div *ngIf="dropdown" class="dropdown-menu">
+            <ul>
+                <li>
+                    <a class="profile" routerLink="profile/home" (click)="toggleDropdown()"><i class="pi pi-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a class="logout" routerLink="/"  (click)="toggleDropdown()"> <i class="pi pi-sign-out"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

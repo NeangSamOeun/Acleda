@@ -1,0 +1,10 @@
+<div class="table">
+    <ul *ngFor="let item of datalists">
+        <li>{{ item.id }}</li>
+        <li>{{ item.name }}</li>
+        <li>{{ item.email }}</li>
+        <li>Street : {{ item.address.street }}</li>
+        <li>{{ item.address.geo.lat }}</li>
+        <li>{{ item.address.geo.lng }}</li>
+    </ul>
+</div>

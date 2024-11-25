@@ -1,0 +1,22 @@
+<h1>Mathematics </h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let titleList of thead">{{ titleList }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let coursesLists of courses">
+                <td>{{ coursesLists.coursescode }}</td>
+                <td>{{ coursesLists.coursesTitle }}</td>
+                <td>{{ coursesLists.Room }}</td>
+                <td>{{ coursesLists.classTime }}</td>
+                <td>{{ coursesLists.teacher }}</td>
+                <td>{{ coursesLists.credits }}</td>
+                <td>{{ coursesLists.baches }}</td>
+                <td>{{ coursesLists.Student }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

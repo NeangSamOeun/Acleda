@@ -1,0 +1,43 @@
+<div class="container">
+  <div>
+    <ul>
+      <li>Home</li>
+      <li>Collection</li>
+      <li>E-Resources</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div>
+    <select name="" id="">
+      <option value="">Catalog</option>
+      <option value="">E-book</option>
+    </select>
+    <input type="text" placeholder="Search" />
+    <button>Search</button>
+  </div>
+</div>
+<div class="mainMenu">
+  <div class="menu-left">
+    <ul *ngFor="let listscategory of categories">
+      <li
+        [routerLink]="listscategory.RouterLink"
+        [routerLinkActive]="listscategory.RouterLinkActive"
+        [queryParams]="{ id: listscategory.id }"
+        queryParamsHandling="merge"
+        >
+        <!-- or "preserve" if you want to keep existing query params -->
+        {{ listscategory.cources }} 
+      </li>
+    </ul>
+    <!-- <ul *ngFor="let listscategory of categories">
+      <li
+        [routerLink]="listscategory.RouterLink"
+        [routerLinkActive]="listscategory.RouterLinkActive"
+      >
+        {{ listscategory.cources }}
+      </li>
+    </ul> -->
+  </div>
+  <div class="main-contant">
+    <router-outlet></router-outlet>
+  </div>

@@ -1,0 +1,38 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.table ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.table ul li {
+    flex: 1 1 30%;
+    padding: 5px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.table ul li:nth-child(odd) {
+    font-weight: bold;
+}
+
+.table ul li:nth-child(even) {
+    color: #555;
+}
+
+.table ul li::before {
+    content: "•";
+    color: #007BFF;
+}
+
+.table ul li:not(:last-child) {
+    margin-right: 15px;
+}

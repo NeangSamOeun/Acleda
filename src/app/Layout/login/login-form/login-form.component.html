@@ -1,0 +1,22 @@
+
+<div class="form-container">
+    <div class="login-image">
+        <img src="assets/image/example.png" alt="">
+    </div>
+    <div class="login-container">
+        <form [formGroup]="userForm" (ngSubmit)="onLogin()" class="login">
+            <h1>Student Login</h1>
+          <div class="input-field">
+            <label for="name" class="input-icon"><i class="pi pi-user"></i></label>
+            <input type="text" id="name" formControlName="name" placeholder="Username"/>
+          </div>
+          <div class="input-field">
+            <label for="password" class="input-icon"><i class="pi pi-lock"></i></label>
+            <input id="password" type="password" formControlName="password" placeholder="Password" />
+          </div>
+          <button type="submit" class="login-button">LOGIN</button>
+          <a href="#" class="forgot-password">Forget your password?</a>
+        </form>
+    </div>
+</div>
+

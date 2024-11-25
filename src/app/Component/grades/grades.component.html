@@ -1,0 +1,36 @@
+<div class="title">
+  <p>My Grades</p>
+</div>
+<div class="selectOption">
+  <label for="select">Select Major</label>
+  <select name="jamor" id="select">
+    <option value="">Computer Science and Engineering Bachelor</option>
+  </select>
+
+  <label for="term">Select Term</label>
+  <select name="" id="term">
+    <option *ngFor="let listTerm of selectTerm" value="">{{ listTerm.term }}</option>
+  </select>
+</div>
+
+<div class="termTable">
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let listTitle of titleTerm">{{ listTitle }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let listsBodyterm of bodyTerm">
+                <td>{{ listsBodyterm.courseCode }}</td>
+                <td>{{ listsBodyterm.coursetile }}</td>
+                <td>{{ listsBodyterm.grade }}</td>
+                <td>{{ listsBodyterm.creditsAttempt }}</td>
+                <td>{{ listsBodyterm.creditsEarned }}</td>
+                <td>{{ listsBodyterm.gradePoint }}</td>
+                <td>{{ listsBodyterm.totalPoint }}</td>
+                <td>{{ listsBodyterm.remake }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

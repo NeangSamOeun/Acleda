@@ -1,0 +1,26 @@
+<div>
+    <form [formGroup]="majorForm" (ngSubmit)="onSubmit()">
+        <label for="student">Student</label>
+        <input id="student" type="text" formControlName="student" required placeholder=""/>
+
+        <label for="department">Department</label>
+        <input id="department" type="text" formControlName="department" required placeholder=""/>
+
+        <label for="level">Level of Study</label>
+        <input id="level" type="text" formControlName="levelofStudy" required placeholder="">
+        
+        <label for="major">Marjor</label>
+        <input id="major" type="text" formControlName="major" required placeholder=""/>
+
+        <label for="admision">Admision Date</label>
+        <input id="admision" type="text" formControlName="admissionData" required placeholder=""/>
+
+        <label for="curriculum">Curriculum</label>
+        <input id="curriculum" type="text" formControlName="curriculum" required placeholder=""/>
+
+        <label for="intake">Intake Number</label>
+        <input id="intake" type="text" formControlName="intakeNumber" required placeholder=""/>
+
+        <!-- <button type="submit">Click</button> -->
+    </form>
+</div>

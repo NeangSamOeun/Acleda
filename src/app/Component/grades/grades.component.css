@@ -1,0 +1,91 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7fa;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Select options styling */
+.selectOption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.selectOption label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.selectOption select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table styling */
+.termTable {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead tr {
+    background-color:  #2d4b75;
+    color: white;
+}
+
+thead th, tbody td {
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
+tbody tr:hover {
+    background-color: #d1e7ff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .selectOption {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    thead th, tbody td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
