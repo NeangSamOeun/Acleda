@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
 export class ProfileComponent {
   
   image: string = 'assets/image/studentProfile.png'
+  visible: boolean = false;
+
+  showDialog() {
+      this.visible = true;
+  }
 
 }

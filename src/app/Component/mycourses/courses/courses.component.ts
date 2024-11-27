@@ -58,7 +58,7 @@ export class CoursesComponent implements OnInit {
 
     if (factory) {
       this.fieldContainer.createComponent(factory);
-    }
+    } 
 
 
   }

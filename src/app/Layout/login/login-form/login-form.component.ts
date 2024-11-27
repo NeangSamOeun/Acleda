@@ -20,7 +20,7 @@ export class LoginFormComponent {
       name: [null, Validators.required],
       password: [null, [Validators.required, Validators.maxLength(6)]],
     });
-  }
+  };
 
   onLogin() {
     if (this.userForm.valid) {
@@ -33,12 +33,13 @@ export class LoginFormComponent {
       }
     }
   }
+
   onClick(){
     if(this.userForm.valid){
-      console.log('Click successfully')
+      console.log('Click successfully');
     }else{
-      console.log('Click failed')
+      console.log('Click failed');
     }
   }
-  
+
 }

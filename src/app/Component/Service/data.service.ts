@@ -8,7 +8,7 @@ import { map, Observable } from 'rxjs';
 export class DataService {
 
   private apiUrl = ' https://jsonplaceholder.typicode.com/users';
-  private apiUrls = 'https://jsonplaceholder.typicode.com/todos/posts';
+  private apiPost = ' https://jsonplaceholder.typicode.com/posts';
 
   constructor(private http: HttpClient) {
     console.log(this.http)
@@ -16,6 +16,10 @@ export class DataService {
 
   fetchData(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
+  }
+
+  getAll(): Observable<any>{
+    return this.http.get<any>(this.apiPost);
   }
 
   // // Fetch all data from the API

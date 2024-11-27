@@ -1,4 +1,22 @@
-
-<div [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }" class="background-box">
-  <h1>Hello world this is background image testing</h1>
+<div >
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>UserId</th>
+          <th>Title</th>
+          <th>Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of listData; let i = index">
+          <td>{{ i+1 }}</td>
+          <td>{{ list.userId }}</td>
+          <td>{{ list.title }}</td>
+          <td>{{ list.body }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
